@@ -10,7 +10,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
+<hr>
 </html>
 <html>
  <meta charset="UTF-8">
@@ -91,7 +91,44 @@ if (!isset($_SESSION['loggedin'])) {
 </select>
 <hr>
 <h1>Ajouter une personne a la table général</h1>
-<a href="ajoute.php">ici</a>
+
+  <form action="add.php">
+  Nom :<br>
+  <input type="text" name="newnom"><br>
+  <br>
+  Prenom:<br>
+  <input type="text" name="newprenom"><br>
+  <br>
+  Departement:<br>
+  <input type="text" name="newdepartement"><br>
+  <br>
+    Nombre de cle :<br>
+  <input type="number" name="newnombredecle"><br>
+  <br>
+    Code de cle :<br>
+  <input type="text" name="newcodedecle"><br>
+  <br>
+    Nom piece:<br>
+  <input type="text" name="newnompiece"><br>
+  <br>
+    Batiment:<br>
+  <input type="text" name="newbatiment"><br>
+  <br>
+    Date de remise:<br>
+  <input type="date" name="newdatederemise"><br>
+  <br>
+    Date de fin:<br>
+  <input type="date" name="newdatedefin"><br>
+  <br>
+    Depot :<br>
+  <input type="number" name="newdepot"><br>
+  
+  
+  <br>
+  <br>
+  <input type="submit" value="submit">
+  </form>
+<a href="mainpageadmin.php">Retour</a>
 <hr>
 <h1>Transfer</h1>
 <form action="transfer.php">
