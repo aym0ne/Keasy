@@ -1,0 +1,130 @@
+# FC7
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height : 100%;
+}
+/* Style the header */
+.header {
+  background-color: #8f001a;
+  padding: 3%;
+  height : 20%;
+  text-align: center;
+  color : #f2f2f2;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  /*revoir*/
+  height: 82vh;
+  background-color:#f2f2f2;
+}
+
+div.column h2 {
+   text-align: center;
+   margin-top: 25px;
+}
+div.column p{
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #2d2d2c;
+  padding: 0.05%;
+  color:white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.vl {
+  border-left: 4px double #2d2d2c;
+  opacity:45%;
+  height: 320px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 195px;
+}
+
+
+div.column a:link, div.column a:visited{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #8f001a;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.55vw;
+  padding: 10px;
+  width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  position : relative;
+  left: 35%; 
+  top: 0px;
+}
+
+div.column a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+div.column a span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+div.column a:hover span {
+  padding-right: 25px;
+}
+
+div.column a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+form {border: 2x solid #f2f2f2;}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #8f001a;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 20px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 27%;
+}
