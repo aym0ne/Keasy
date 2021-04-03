@@ -149,6 +149,18 @@ if (!isset($_SESSION['loggedin'])) {
   <input type="text" name="departement"><br>
   <input type="submit" value="supprimer" ><br>
  </form>
+<hr>	
+<h1>Modiffier</h1>
+<form action="modify.php">
+  veuillez entrer le nom de la personne  :<br>
+  <input type="text" name="nom"><br>
+  veuillez entrer le departement :<br>
+  <input type="text" name="departement"><br>
+   veuillez entrer la colonne a modiffier<br>
+  <input type="text" name="colonne"><br>
+   veuillez entrer le nouveau texte<br>
+  <input type="text" name="modif"><br>
+  <input type="submit" value="modiffier" ><br>
   
 <?php
 //include "keyword.php";
