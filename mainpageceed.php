@@ -109,6 +109,7 @@ if (!isset($_SESSION['loggedin'])) {
   veuillez entrer le nom de la personne a ajouter :<br>
   <input type="text" name="nom"><br>
   <input type="submit" value="ajouter" ><br>
+</form>
  <hr>
  <h1>Supprimer</h1>
 <form action="delete.php">
