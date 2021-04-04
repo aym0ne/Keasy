@@ -16,6 +16,6 @@ else{
 $mysqli->close();
 
 ?>
-<a href="mainpageadmin.php">Retour </a>
+<a href="mainpageceed.php">Retour </a>
 </body>
 </html>
