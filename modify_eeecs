@@ -22,6 +22,6 @@ else{
 $mysqli->close();
 
 ?>
-<a href="mainpageeeecs.php">Retour </a>
+<a href="mainpageeecs.php">Retour </a>
 </body>
 </html>
