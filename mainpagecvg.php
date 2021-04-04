@@ -99,7 +99,13 @@ include "db_connect.php";
     Depot :<br>
   <input type="number" name="newdepot"><br>
   
-  
+  <hr>
+<h1>Ajouter une personne automatiquement</h1>
+<form action="transfer_cvg.php">
+  veuillez entrer le nom de la personne a ajouter :<br>
+  <input type="text" name="nom"><br>
+  <input type="submit" value="ajouter" ><br>
+</form>
   <br>
   <br>
   <input type="submit" value="submit">
