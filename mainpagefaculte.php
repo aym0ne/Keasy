@@ -34,7 +34,7 @@ include "db_connect.php";
 
 	<div class="header">
 		<h1>GESTION DE CLÉS</h1>
-    	<h1>CVG</h1>
+    	<h1>Faculté</h1>
 	</div>
 
 	<body class="loggedin">
