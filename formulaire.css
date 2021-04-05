@@ -246,7 +246,7 @@
           </p>
           <p>
             <label>Dépôt ($CAD)</label>
-            <input type="email" name="depot">
+            <input type="int" name="depot">
           </p>
           <p>
             <label>Nom du superviseur</label>
