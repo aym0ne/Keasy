@@ -1,10 +1,27 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+			background: #f2f2f2;
+			padding: 1em;
+		}	
+.table
+  {  
+     font-size:12pt;
+     background-color:#FFFFFF;
+     color:white;
+     text-align:center;  }
+</style>
+<body>
+</body>
+</html>
 <?php
 
 include "db_connect.php";
 $keywordfromform = $_GET["keyword"];
 $keyword = $_GET["keywords"];
 $departement = $_GET["departement"];
-echo "<h2>Rechcerche</h2>";
+echo "<h2>Recherche</h2>";
 echo "<hr>";
 if ($keyword == 'Nom'){
     $sql = "SELECT ID, Nom, Prenom, Departement, Nombre_de_cle, Code_de_cle, Nom_piece, Batiment, Date_de_remise, Date_de_fin, Depot FROM $departement WHERE Nom LIKE '%". $keywordfromform ."%'";
@@ -43,7 +60,7 @@ elseif($keyword == 'Depot'){
     $result = $mysqli->query($sql);
 }
  else{
-	echo"try again";
+	echo"Zéro (0) résultats.";
 }
 
 if ($result->num_rows > 0) {
@@ -60,10 +77,10 @@ if ($result->num_rows > 0) {
   }
           echo '</table>';
 } else {
-  echo "0 results";
+  echo " Essayez à nouveau.";
 }
 
 ?>
 <hr>
 <br>
-<a href="mainpageadmin.php">Retour a la page d'admin</a>
+<a href="mainpageadmin.php">Retourner à la page précédente</a>
