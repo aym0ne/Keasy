@@ -1,3 +1,6 @@
+<html>
+ <meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <!DOCTYPE html>
 <html lang="fr">
 <div id="google_translate_element"></div>
@@ -12,9 +15,6 @@ function googleTranslateElementInit() {
 
 
 </html>
-<html>
- <meta charset="UTF-8">
-<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <head>
 
 </head>
@@ -24,19 +24,18 @@ function googleTranslateElementInit() {
 
 
 <?php
-
-include "db_connect.php";
 session_start();
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit;
 }
+include "db_connect.php";
+
 ?>
-<h1>Recherche</h1>
 <body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Admin</h1>
+				<h1>CHG</h1>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
@@ -45,7 +44,7 @@ if (!isset($_SESSION['loggedin'])) {
 			<p>De retour, <?=$_SESSION['name']?>!</p>
 		</div>
 	</body>
-
+	<h1>Recherche</h1>
 <form action="keyword.php" id="keywordform">
    Recherche:<br>
   <input type="text" name="keyword"><br>
@@ -68,7 +67,6 @@ if (!isset($_SESSION['loggedin'])) {
   <option value="Depot">Depot</option>
 </select>
 <hr>
-
   <h2>Ajouter une nouvelle personne a la table CVG</h2>
   <form action="add.php">
   Nom :<br>
@@ -101,18 +99,17 @@ if (!isset($_SESSION['loggedin'])) {
     Depot :<br>
   <input type="number" name="newdepot"><br>
   
-  
-  <br>
-  <br>
-  <input type="submit" value="submit">
-  </form>
-<hr>
+  <hr>
 <h1>Ajouter une personne automatiquement</h1>
-<form action="transfer_chg.php">
+<form action="transfer_cvg.php">
   veuillez entrer le nom de la personne a ajouter :<br>
   <input type="text" name="nom"><br>
   <input type="submit" value="ajouter" ><br>
 </form>
+  <br>
+  <br>
+  <input type="submit" value="submit">
+  </form>
  <hr>
  <h1>Supprimer</h1>
 <form action="delete.php">
@@ -123,7 +120,7 @@ if (!isset($_SESSION['loggedin'])) {
   <input type="submit" value="supprimer" ><br>
   <hr>
  <h1>Modiffier</h1>
-<form action="modify_chg.php">
+<form action="modify_cvg.php">
   veuillez entrer le nom de la personne  :<br>
   <input type="text" name="nom"><br>
    veuillez entrer la colonne a modiffier<br>
