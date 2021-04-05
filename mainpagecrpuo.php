@@ -1,7 +1,6 @@
 <html>
  <meta charset="UTF-8">
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-
 <!DOCTYPE html>
 <html lang="fr">
 <div id="google_translate_element"></div>
@@ -16,21 +15,23 @@ function googleTranslateElementInit() {
 
 
 </html>
+<head>
+
+</head>
 
 <body>
 
 
-<?php
 
-include "db_connect.php";
+<?php
 session_start();
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit;
 }
+include "db_connect.php";
+
 ?>
-
-
 <body class="loggedin">
 		<nav class="navtop">
 			<div>
@@ -43,8 +44,7 @@ if (!isset($_SESSION['loggedin'])) {
 			<p>De retour, <?=$_SESSION['name']?>!</p>
 		</div>
 	</body>
-<h1>Recherche</h1>
-
+	<h1>Recherche</h1>
 <form action="keyword.php" id="keywordform">
    Recherche:<br>
   <input type="text" name="keyword"><br>
@@ -99,7 +99,13 @@ if (!isset($_SESSION['loggedin'])) {
     Depot :<br>
   <input type="number" name="newdepot"><br>
   
-  
+  <hr>
+<h1>Ajouter une personne automatiquement</h1>
+<form action="transfer_crpuo.php">
+  veuillez entrer le nom de la personne a ajouter :<br>
+  <input type="text" name="nom"><br>
+  <input type="submit" value="ajouter" ><br>
+</form>
   <br>
   <br>
   <input type="submit" value="submit">
@@ -131,6 +137,7 @@ $mysqli->close();
 
 ?>
 <br>
+
 </body>
 
 </html>
