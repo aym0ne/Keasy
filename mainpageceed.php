@@ -123,7 +123,7 @@ include "db_connect.php";
 <div id="Transfert" class="tabcontent">
 <h2>Ajouter une personne automatiquement</h2>
 <p>Transférer les données d'une personne d'un département à un autre en entrant les informations suivantes:</p>
-<form action="transfer_cvg.php">
+<form action="transfer_ceed.php">
   <br>Nom du détenteur :<br>
   <input type="text" id="name" name="nom"><br>
   <br>Département :<br>
@@ -136,7 +136,7 @@ include "db_connect.php";
 <div id="Modification" class="tabcontent">
 <h2>Modifier les données du tableau.</h2>
 <p>Pour faire la modification d'une case du tableau de données entrer les informations suivantes:</p>
-<form action="modify_cvg.php">
+<form action="modify_ceed.php">
 Nom de la personne:<br>   
 <input type="text" name="nom">           
 <br>Département:<br>   
