@@ -112,8 +112,6 @@ include "db_connect.php";
   <form action="delete.php">
   <br>Nom du détenteur :<br>
   <input type="text" id="name" name="nom">
-  <br>Département :<br>
-  <input type="text" id="département" name="departement">
   <br>
   <input type="submit" value="Supprimer">
   </form>
@@ -125,9 +123,7 @@ include "db_connect.php";
 <p>Transférer les données d'une personne d'un département à un autre en entrant les informations suivantes:</p>
 <form action="transfer_cvg.php">
   <br>Nom du détenteur :<br>
-  <input type="text" id="name" name="nom"><br>
-  <br>Département :<br>
-  <input type="text" id="département" name="departement"><br>
+  <input type="text" id="name" name="nom"><br><br>
   <input type="submit" value="Ajouter" ><br>
 </form>
 </div>
@@ -138,9 +134,7 @@ include "db_connect.php";
 <p>Pour faire la modification d'une case du tableau de données entrer les informations suivantes:</p>
 <form action="modify_cvg.php">
 Nom de la personne:<br>   
-<input type="text" name="nom">           
-<br>Département:<br>   
-<input type="text" name="département">       
+<input type="text" name="nom">               
 <br>Colonne à modifier:<br>   
 <input type="text" name="colonne"> 
 <br>Nouvelle information:<br>   
