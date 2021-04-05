@@ -19,7 +19,7 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="mainpagecvg.css" />
+	<link rel="stylesheet" type="text/css" href="stylepage.css" />
 </head>
 
 <body>
@@ -48,9 +48,9 @@ include "db_connect.php";
 
 <button class="tablink" onclick="openPage('Recherche', this,'#d1ccc7')"id="defaultOpen">Recherche</button>
 <button class="tablink" onclick="openPage('Ajout', this, '#bab3ab')" >Ajout</button>
-<button class="tablink" onclick="openPage('Suppression', this,'#aca39a')">Suppression</button>
+<button class="tablink" onclick="openPage('Transfert', this, '#aca39a')">Transfert</button>
 <button class="tablink" onclick="openPage('Modification', this, '#988c81')">Modification</button>
-<button class="tablink" onclick="openPage('Transfert', this, '#7c716a')">Transfert</button>
+<button class="tablink" onclick="openPage('Suppression', this,'#7c716a')">Suppression</button>
 
 
 <div id="Recherche" class="tabcontent">
