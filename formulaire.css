@@ -207,7 +207,7 @@
           </p>
           <p>
             <label>Code de clé</label>
-            <input type="email" name="codedecle">
+            <input type="text" name="codedecle">
           </p>
           <p>
           <label for="batiment">Bâtiment</label>
