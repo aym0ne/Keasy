@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 	<style>
@@ -14,43 +14,31 @@
 			line-height: 1.6;
 			font-family: Arial, Helvetica, sans-serif;
 			padding: 1em;
-		}		
-        .wrapper {
+		}		.wrapper {
 			box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.9);
-		}
-
-		.wrappper>* {
+		}	.wrappper>* {
 			padding: 1em;
 		}
 		/*FORM STYLES*/
         .title {
 			text-align: center;
-		}
-
-		.title span {
+		}	.title span {
 			color: #fff;
-		}
-		.contact form {
+		}.link span {
+			color: pink;
+		}.contact form {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 20px;
-		}
-
-		.contact form label {
+		}.contact form label {
 			display: block;
-		}
-
-		.contact form p {
+		}	.contact form p {
 			margin: 0;
-		}
-
-		.contact form .full {
+		}.contact form .full {
 			grid-column: 1/3;
-		}
-        .contact {
+		} .contact {
 			background: #f2f2f2;
-		}
-		.container {
+		}.container {
 			max-width: 1170px;
 			margin-left: auto;
 			margin-right: auto;
@@ -60,23 +48,17 @@
         /*FILES STYLES*/
 		.files {
 			background: #f2f2f2;
-		}
-
-		.files h3,.files ul {
+		}.files h3,.files ul {
 			text-align: left;
 			margin: 0 0 1rem 0;
 		}.files button {
 			width: 100%;
 			padding: 1em;
-		}
-
-		.files button {
+		}.files button {
 			background: #8f001a;
 			border: 0;
 			text-transform: uppercase;
-		}
-
-		.files button:hover,
+		}.files button:hover,
 		.files button:focus {
 			background: #2d2d2c;
 			color: #fff;
@@ -95,14 +77,12 @@
   -ms-user-select: none;
   user-select: none;
 }
-
 /* Hide the browser's default radio button */
 .container_radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-
 /* Create a custom radio button */
 .checkmark {
   position: absolute;
@@ -118,24 +98,20 @@
 .container_radio:hover input ~ .checkmark {
   background-color: #ccc;
 }
-
 /* When the radio button is checked, add a blue background */
 .container_radio input:checked ~ .checkmark {
   background-color: #df4526;
 }
-
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 /* Show the indicator (dot/circle) when checked */
 .container_radio input:checked ~ .checkmark:after {
   display: block;
 }
-
 /* Style the indicator (dot/circle) */
 .container_radio .checkmark:after {
  	top: 9px;
@@ -144,22 +120,32 @@
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}ul.b {
+  list-style-type: square;
+}.add {
+  text-align: center;
 }
 		/* LARGE SCREENS */
 		@media(min-width:900px) {
 			.wrapper {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-			}
+			}.files button {
+			width: 100%;
+			padding: 1em;
+		}.square {
+  width: 300px;
+  height: 280px;
+  background: #f2f2f2;
+}
+        }
 	</style>
-
 	<body>
 		<meta charset="UTF-8">
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width-device-width, initial-scale-1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="style.css">
-    <form action="Sendemail.php" role="form" method="post" enctype="multipart/form-data" action="Sendmail.php">
 </head>
 
 <body>
@@ -171,43 +157,43 @@
         <form>
           <p>
             <label>Nom de famille</label>
-            <input type="text" name="nom">
+            <input type="text" name="name">
           </p>
           <p>
             <label>Prénom</label>
-            <input type="text" name="prenom">
+            <input type="text" name="company">
           </p>
           <p>
             <label>Numéro d'étudiant/employé</label>
-            <input type="text" name="etu">
+            <input type="email" name="email">
           </p>
           <p>
             <label>Numéro de téléphone</label>
-            <input type="text" name="tele">
+            <input type="text" name="phone">
           </p>
            <p>
             <label>Courriel uOttawa</label>
-            <input type="text" name="emailottawa">
+            <input type="email" name="email">
           </p>
           <p>
             <label>Courriel alternatif</label>
-            <input type="text" name="altmail">
+            <input type="text" name="phone">
           </p>  
            <p>
             <label>Contact d’urgence</label>
-            <input type="text" name="urgence">
+            <input type="email" name="email">
           </p>
           <p>
-            <label>Numéro de téléphone du contact d'urgence</label>
-            <input type="text" name="teleurgence">
+            <label>Numéro de téléphone du contact</label>
+            <input type="text" name="phone">
           </p>
           <p>
             <label>Nombre de clé</label>
-            <input type="text" name="nombredecle">
+            <input type="text" name="phone">
           </p>
           <p>
             <label>Code de clé</label>
-            <input type="text" name="codedecle">
+            <input type="email" name="email">
           </p>
           <p>
           <label for="batiment">Bâtiment</label>
@@ -222,7 +208,7 @@
     </p>
     <p>
 <label for="depo">Département</label>
-    <select id="depo" name="departement">
+    <select id="depo" name="depo">
       <option value="CHG">CHG</option>
       <option value="CVG">CVG</option>
       <option value="EECS">EECS</option>
@@ -233,8 +219,8 @@
     </select>
     </p>
      <p>
-          Date de remise:<br>
-  <input type="date" name="datederemise"></p>
+          Date de fin:<br>
+  <input type="date" name="datedefin"></p>
   <p>
   Date de fin:<br>
   <input type="date" name="datedefin">
@@ -242,73 +228,75 @@
         
           <p>
             <label>Nom de la salle</label>
-            <input type="text" name="nompiece">
+            <input type="text" name="phone">
           </p>
           <p>
             <label>Dépôt ($CAD)</label>
-            <input type="int" name="depot">
+            <input type="email" name="email">
           </p>
           <p>
             <label>Nom du superviseur</label>
-            <input type="text" name="supnom">
+            <input type="text" name="phone">
           </p> 
           <p>
             <label>Courriel du superviseur</label>
-            <input type="text" name="supmail">
+            <input type="text" name="phone">
           </p>
   <class="full">
           <h4>Statut</h4>
 <label class="container_radio">Étudiant
-  <input type="radio" checked="checked" name="statue">
+  <input type="radio" checked="checked" name="radio">
   <span class="checkmark"></span>
 </label>
 <label class="container_radio">Professeur
-  <input type="radio" name="statue">
+  <input type="radio" name="radio">
   <span class="checkmark"></span>
 </label>
 <label class="container_radio">Personnel
-  <input type="radio" name="statue">
+  <input type="radio" name="radio">
   <span class="checkmark"></span>
 </label>
 <label class="container_radio">Bénévole
-  <input type="radio" name="statue">
+  <input type="radio" name="radio">
   <span class="checkmark"></span>
 </label>
   
         </form>       
       </div>
+ 
       <div class="files">
         <br><h3>Veuillez téléverser les fichiers PDF pertinents.</h3>                <input type="hidden" name="MAX_FILE_SIZE" value="100000">
-    <h4>Les formations suivantes sont obligatoires pour tous les membres du personnel rémunérés, les étudiants et les bénévoles:</h4> 
-   SIMDUT
-  <input type="file"  name="simdut" ><br>
-    <br>Sensibilisation des travailleurs à la santé et la sécurité<br>
-  <input type="file" name="secu" id="secu"><br>
-   <br> Prévention de la violence <br>
-  <input type="file" name="violence" id="violence"><br>
-  <br>  Respect en milieu de travail<br>
-  <input type="file" name="respect" id="respect"><br>
-    <br>Normes d'accessibilités pour les services à la clientèle<br>
-  <input type="file" name="clientele" id="clientele"><br>
-    <br>Travaillons ensemble : Le code des droits de la personne de l’Ontario et la LAPHO<br>
-  <input type="file" name="ensemble" id="ensemble"><br>
- <br>
- <h4>Les formations suivantes sont obligatoires pour tous les superviseurs:</h4>
- Sensibilisation des superviseurs à la santé et à la sécurité
-  <input type="file" name="sup" id="sup"><br>
-    <h4>Les formations suivantes sont obligatoires pour toute personne travaillant dans un laboratoire:</h4> 
-    Sécurité en laboratoire<br>
-  <input type="file" name="sciencelab" id="sciencelab"><br>
-    <br>Gestion des risque en laboratoire de génie<br>
-  <input type="file" name="genielab" id="genielab">
-  <br>
-  <ul>
-    <br><a href="index.php">Retourner à la page d'accueil</a><br>
+    <h4>Les formations suivantes sont obligatoires pour tous les membres du personnel rémunérés, les étudiants et les bénévoles:</h4>
+<ul class="b">
+<li>Sensibilisation des travailleurs à la santé et la sécurité</li>
+<li>Prévention de la violence</li>
+<li>Respect en milieu de travail</li>
+<li>Normes d'accessibilités pour les services à la clientèle</li>
+<li>Travaillons ensemble : Le code des droits de la personne de l’Ontario et la LAPHO</li>
 </ul>
+
+
+ <h4>Les formations suivantes sont obligatoires pour tous les superviseurs:</h4>
+<ul class="b">
+<li>Sensibilisation des superviseurs à la santé et à la sécurité</li>
+</ul>
+    <h4>Les formations suivantes sont obligatoires pour toute personne travaillant dans un laboratoire:</h4> 
+<ul class="b">
+<li>Sécurité en laboratoire</li>
+<li>Gestion des risques en laboratoire de génie</li>
+</ul>
+<div class="add">
+<input type="file" name="sciencelab" id="sciencelab">
+<br><br>
+</div>
           <class="full">
+            <div class = "square"></div>
             <button>Envoyez le formulaire</button>
       </div>
     </div>
   </div>
+  <div class = "link">
+<a href="index.php"><span>Retourner à la page d'accueil</span></a>
+ </div>
 </body>
 </html>
