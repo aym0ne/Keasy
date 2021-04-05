@@ -81,7 +81,7 @@ include "db_connect.php";
 
 <div id="Ajout" class="tabcontent">
   <h2>Ajout d'une personne.</h2>
-  <p>Ajouter une nouvelle personne à la table CVG</p> 
+  <p>Ajouter une nouvelle personne à la table Faculté</p> 
   <hr>
 	<form action="add.php">
 		Nom :<br>   
@@ -123,7 +123,7 @@ include "db_connect.php";
 <div id="Transfert" class="tabcontent">
 <h2>Ajouter une personne automatiquement</h2>
 <p>Transférer les données d'une personne d'un département à un autre en entrant les informations suivantes:</p>
-<form action="transfer_cvg.php">
+<form action="transfer_faculte.php">
   <br>Nom du détenteur :<br>
   <input type="text" id="name" name="nom"><br>
   <br>Département :<br>
@@ -136,7 +136,7 @@ include "db_connect.php";
 <div id="Modification" class="tabcontent">
 <h2>Modifier les données du tableau.</h2>
 <p>Pour faire la modification d'une case du tableau de données entrer les informations suivantes:</p>
-<form action="modify_cvg.php">
+<form action="modify_faculte.php">
 Nom de la personne:<br>   
 <input type="text" name="nom">           
 <br>Département:<br>   
