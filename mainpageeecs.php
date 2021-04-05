@@ -1,7 +1,6 @@
 <html>
  <meta charset="UTF-8">
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-
 <!DOCTYPE html>
 <html lang="fr">
 <div id="google_translate_element"></div>
@@ -16,25 +15,27 @@ function googleTranslateElementInit() {
 
 
 </html>
+<head>
+
+</head>
 
 <body>
 
 
 
 <?php
-
-include "db_connect.php";
 session_start();
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit;
 }
-?>
+include "db_connect.php";
 
-	<body class="loggedin">
+?>
+<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>EECS</h1>
+				<h1>EEECS</h1>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
@@ -43,7 +44,7 @@ if (!isset($_SESSION['loggedin'])) {
 			<p>De retour, <?=$_SESSION['name']?>!</p>
 		</div>
 	</body>
-<h1>Recherche</h1>
+	<h1>Recherche</h1>
 <form action="keyword.php" id="keywordform">
    Recherche:<br>
   <input type="text" name="keyword"><br>
@@ -66,7 +67,7 @@ if (!isset($_SESSION['loggedin'])) {
   <option value="Depot">Depot</option>
 </select>
 <hr>
-  <h2>Ajouter une nouvelle personne a la table EECS</h2>
+  <h2>Ajouter une nouvelle personne a la table EEECS</h2>
   <form action="add.php">
   Nom :<br>
   <input type="text" name="newnom"><br>
@@ -98,18 +99,17 @@ if (!isset($_SESSION['loggedin'])) {
     Depot :<br>
   <input type="number" name="newdepot"><br>
   
-  
-  <br>
-  <br>
-  <input type="submit" value="submit">
-  </form>
-<hr>
+  <hr>
 <h1>Ajouter une personne automatiquement</h1>
 <form action="transfer_eeecs.php">
   veuillez entrer le nom de la personne a ajouter :<br>
   <input type="text" name="nom"><br>
   <input type="submit" value="ajouter" ><br>
 </form>
+  <br>
+  <br>
+  <input type="submit" value="submit">
+  </form>
  <hr>
  <h1>Supprimer</h1>
 <form action="delete.php">
@@ -137,6 +137,7 @@ $mysqli->close();
 
 ?>
 <br>
+
 </body>
 
 </html>
