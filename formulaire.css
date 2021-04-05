@@ -171,43 +171,43 @@
         <form>
           <p>
             <label>Nom de famille</label>
-            <input type="text" name="name">
+            <input type="text" name="nom">
           </p>
           <p>
             <label>Prénom</label>
-            <input type="text" name="company">
+            <input type="text" name="prenom">
           </p>
           <p>
             <label>Numéro d'étudiant/employé</label>
-            <input type="email" name="email">
+            <input type="text" name="etu">
           </p>
           <p>
             <label>Numéro de téléphone</label>
-            <input type="text" name="phone">
+            <input type="text" name="tele">
           </p>
            <p>
             <label>Courriel uOttawa</label>
-            <input type="email" name="email">
+            <input type="text" name="emailottawa">
           </p>
           <p>
             <label>Courriel alternatif</label>
-            <input type="text" name="phone">
+            <input type="text" name="altmail">
           </p>  
            <p>
             <label>Contact d’urgence</label>
-            <input type="email" name="email">
+            <input type="text" name="urgence">
           </p>
           <p>
-            <label>Numéro de téléphone du contact</label>
-            <input type="text" name="phone">
+            <label>Numéro de téléphone du contact d'urgence</label>
+            <input type="text" name="teleurgence">
           </p>
           <p>
             <label>Nombre de clé</label>
-            <input type="text" name="phone">
+            <input type="text" name="nombredecle">
           </p>
           <p>
             <label>Code de clé</label>
-            <input type="email" name="email">
+            <input type="email" name="codedecle">
           </p>
           <p>
           <label for="batiment">Bâtiment</label>
@@ -222,7 +222,7 @@
     </p>
     <p>
 <label for="depo">Département</label>
-    <select id="depo" name="depo">
+    <select id="depo" name="departement">
       <option value="CHG">CHG</option>
       <option value="CVG">CVG</option>
       <option value="EECS">EECS</option>
@@ -233,8 +233,8 @@
     </select>
     </p>
      <p>
-          Date de fin:<br>
-  <input type="date" name="datedefin"></p>
+          Date de remise:<br>
+  <input type="date" name="datederemise"></p>
   <p>
   Date de fin:<br>
   <input type="date" name="datedefin">
@@ -242,36 +242,36 @@
         
           <p>
             <label>Nom de la salle</label>
-            <input type="text" name="phone">
+            <input type="text" name="nompiece">
           </p>
           <p>
             <label>Dépôt ($CAD)</label>
-            <input type="email" name="email">
+            <input type="email" name="depot">
           </p>
           <p>
             <label>Nom du superviseur</label>
-            <input type="text" name="phone">
+            <input type="text" name="supnom">
           </p> 
           <p>
             <label>Courriel du superviseur</label>
-            <input type="text" name="phone">
+            <input type="text" name="supmail">
           </p>
   <class="full">
           <h4>Statut</h4>
 <label class="container_radio">Étudiant
-  <input type="radio" checked="checked" name="radio">
+  <input type="radio" checked="checked" name="statue">
   <span class="checkmark"></span>
 </label>
 <label class="container_radio">Professeur
-  <input type="radio" name="radio">
+  <input type="radio" name="statue">
   <span class="checkmark"></span>
 </label>
 <label class="container_radio">Personnel
-  <input type="radio" name="radio">
+  <input type="radio" name="statue">
   <span class="checkmark"></span>
 </label>
 <label class="container_radio">Bénévole
-  <input type="radio" name="radio">
+  <input type="radio" name="statue">
   <span class="checkmark"></span>
 </label>
   
