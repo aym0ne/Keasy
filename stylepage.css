@@ -1,0 +1,114 @@
+* {box-sizing: border-box}
+
+/* Style the header */
+.header {
+  background-color: #8f001a;
+  padding: 20px;
+  text-align: center;
+  color : #f2f2f2;
+}
+/* Set height of body and the document to 100% */
+body, html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #2d2d2c;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 250vh;
+}
+
+div.top a:link, div.top a:visited {
+  background-color:  #660013;
+  color: #f2f2f2;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  position:absolute;
+  right:10px;
+  top:5px;
+}
+
+div.top a:hover, div.top a:active {
+  opacity: 50%;
+
+}
+h1{
+color : #f2f2f2
+}
+h2{
+  color : #2d2d2c;
+}
+
+.tabcontent{
+color : #2d2d2c;
+font-weight: bold;
+}
+
+p { color : white;}
+select {
+  width: 30%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 90%;
+}
+
+input[type=submit] {
+  background-color: #8f001a;
+  border: none;
+  color: white;
+  width: 115px;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 4px 1px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+input[type=text], input[type=number],input[type=date]  {
+  width: 50vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#Recherche {background-color: #d1ccc7;}
+#Ajout {background-color:#bab3ab;}
+#Suppression {background-color: #aca39a;}
+#Modification {background-color:   #988c81;}
+#Transfert{background-color: #7c716a;}
