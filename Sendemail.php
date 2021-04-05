@@ -49,7 +49,7 @@ include "db_connect.php";
 
 $nom = $_POST["nom"];
 $prenom = $_POST["prenom"];
-$faculte = $_POST["faculte"];
+//$faculte = $_POST["faculte"];
 $departement = $_POST["departement"];
 $nombre_de_cle = $_POST["nombredecle"];
 $code_de_cle = $_POST["codedecle"];
