@@ -2,6 +2,13 @@
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <!DOCTYPE html>
 <html lang="fr">
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <style>
   *{
     margin: 0;
