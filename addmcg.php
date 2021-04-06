@@ -35,7 +35,7 @@
   }   			
 }
 </style>
-<title>Add</title>
+<title>addmcg</title>
 </html>
 <?php
 
