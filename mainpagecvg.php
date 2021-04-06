@@ -162,5 +162,9 @@ function openPage(pageName,elmnt,color) {
 document.getElementById("defaultOpen").click();
 </script>
 
+	<?php
+//include "keyword.php";
+$mysqli->close();
+?>
 </body>
 </html>
