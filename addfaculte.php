@@ -35,7 +35,7 @@
   }   			
 }
 </style>
-<title>Add</title>
+<title>addfaculte</title>
 </html>
 <?php
 
