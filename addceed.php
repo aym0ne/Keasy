@@ -61,7 +61,7 @@ $new_depot = $_GET["newdepot"];
 
 
 // Search the database for the word bike
-echo "<h1>Vous avez ajouté quelqu'un à la liste</h1>";
+echo "<h1>Vous avez ajouté quelqu'un à la base de données!</h1>";
 
 $sql = "INSERT INTO ceed (ID, Nom, Prenom, Departement, Nombre_de_cle, Code_de_cle, Nom_piece, Batiment, Date_de_remise, Date_de_fin, Depot) VALUES (NULL, '$new_nom', '$new_prenom', '$new_departement', '$new_nombre_de_cle', '$new_code_de_cle', '$new_nom_piece', '$new_batiment', '$new_date_de_remise', '$new_date_de_fin', '$new_depot')";
 $result = $mysqli->query($sql);
@@ -71,7 +71,7 @@ $result = $mysqli->query($sql);
 ?>
 <html>
 <body>
-<h1>Vous avez ajouté quelqu'un à la liste!</h1>
+<h1>Vous avez ajouté quelqu'un à la base de données!</h1>
 <div class = "square"></div>
 <div class = "link">
       <a href="mainpageceed.php"><span>Retourner à la page d'accueil</span></a>
