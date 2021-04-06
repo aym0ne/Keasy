@@ -71,7 +71,7 @@ $result = $mysqli->query($sql);
 ?>
 <html>
 <body>
-<h1>Vous avez ajouté quelqu'un à la liste!</h1>
+<h1>Vous avez ajouté quelqu'un à la base de données!</h1>
 <div class = "square"></div>
 <div class = "link">
       <a href="mainpagelogin.php"><span>Retourner à la page d'accueil</span></a>
