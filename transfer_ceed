@@ -42,6 +42,15 @@ function googleTranslateElementInit() {
   }   			
 }
 </style>
+<html>
+<?php
+include "db_connect.php";
+$name= $_GET["nom"];
+$departement = $_GET["departement"];
+$sql = "INSERT INTO $departement(Nom,Prenom,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot) SELECT Nom,Prenom,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot FROM ceed WHERE  Nom  LIKE'%" .$name. "%'";
+$result = $mysqli->query($sql);
+?>
+</html>
 <title>transfer</title>
 <body>
 <h1> L'ajout automatique à la base de données a été effectué!</h1>
@@ -54,10 +63,4 @@ function googleTranslateElementInit() {
 </div>
 </body>
 </html>
-<?php
-include "db_connect.php";
-$name= $_GET["nom"];
-$departement = $_GET["departement"];
-$sql = "INSERT INTO $departement(Nom,Prenom,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot) SELECT Nom,Prenom,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot FROM ceed WHERE  Nom  LIKE'%" .$name. "%'";
-$result = $mysqli->query($sql);
-?>
+
