@@ -1,5 +1,22 @@
 <meta charset="UTF-8">
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<html>
+<style>
+body {
+			background: #f2f2f2;
+			padding: 1em;
+			text-align: center;
+		}	
+.table
+  {  
+     font-size:12pt;
+     background-color:#FFFFFF;
+     color:white;
+     text-align:center;  }
+</style>
+<body>
+</body>
+</html>
 <html lang="fr">
 <div id="google_translate_element"></div>
 
