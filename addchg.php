@@ -35,7 +35,7 @@
   }   			
 }
 </style>
-<title>Add</title>
+<title>addchg</title>
 </html>
 <?php
 
