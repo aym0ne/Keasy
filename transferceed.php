@@ -51,7 +51,7 @@ $sql = "INSERT INTO $departement(Nom,Prenom,Departement,Nombre_de_cle,Code_de_cl
 $result = $mysqli->query($sql);
 ?>
 </html>
-<title>transfer</title>
+<title>transferceed</title>
 <body>
 <h1> L'ajout automatique à la base de données a été effectué!</h1>
 <div class = "square"></div>
