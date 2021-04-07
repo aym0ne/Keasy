@@ -93,23 +93,53 @@ include "db_connect.php";
   <hr>
 	<form action="add.php">
 		Nom :<br>   
-  <input type="text" name="newnom">  
+  <input type="text" name="nom">  
             <br>   
   Prénom:<br>   
-            <input type="text" name="newprenom">   
+            <input type="text" name="prenom">   
             <br>  
              Département:<br>   
-             <input type="text" name="newdepartement"> <br>     Nombre de clé :<br>   
-             <input type="number" name="newnombredecle">  <br>     Code de clé :<br>   
-             <input type="text" name="newcodedecle">   <br> Nom de pièce:<br>   
-             <input type="text" name="newnompiece"><br>        Bâtiment:<br>   
-             <input type="text" name="newbatiment"><br>     Date de remise:<br>   
-             <input type="date" name="newdatederemise"> <br> Date de fin:<br>
-  <input type="date" name="newdatedefin">
+             <input type="text" name="departement"> <br>     Nombre de clé :<br>   
+             <input type="number" name="nombredecle">  <br>     Code de clé :<br>   
+             <input type="text" name="codedecle">   <br> Nom de pièce:<br>   
+             <input type="text" name="nompiece"><br>        Bâtiment:<br>   
+             <input type="text" name="batiment"><br>     Date de remise:<br>   
+             <input type="date" name="datederemise"> <br> Date de fin:<br>
+  <input type="date" name="datedefin">
   <br>
   Dépôt :<br>
-  <input type="number" name="newdepot">
+  <input type="number" name="depot">
   <br>
+		  Statue :<br>
+  <input type="text" name="statue">
+  <br>
+  Numéro d'étudiant :<br>
+  <input type="text" name="numero_etudiant">
+  <br>		
+		  Courriel :<br>
+  <input type="text" name="courriel"><br>
+		  Courriel uOttawa :<br>
+  <input type="text" name="courriel_uottawa">
+  <br>
+		  Contact d'urgence :<br>
+  <input type="text" name="contact_urgence">
+  <br>
+		
+	  Téléphone du contact d'urgence :<br>
+  <input type="text" name="tele_contact_urgence">
+  <br>
+			  Nom du superviseur:<br>
+  <input type="text" name="nom_sup">
+  <br>
+			  Courriel superviseur :<br>
+  <input type="text" name="courriel_sup">
+  <br>
+			  Statue de la clé:<br>
+  <input type="text" name="statue_cle">
+  <br>
+		
+		
+		
   <input type="submit" value="Ajouter">
   </form><br>
 </div>
