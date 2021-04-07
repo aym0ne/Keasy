@@ -114,7 +114,7 @@ function googleTranslateElementInit() {
   <p>Développé par Keasy</p>
 </div>
  <div class = "link">
-      <a href="mainpagelogin.php"><span>Retourner à la page d'accueil</span></a>
+      <a href="index.php"><span>Retourner à la page d'accueil</span></a>
       </div>
 </div>
 </body>
