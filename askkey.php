@@ -62,6 +62,7 @@ function googleTranslateElementInit() {
 			padding: 1em;
 		}.files button {
 			background: #8f001a;
+			color: white;
 			border: 0;
 			text-transform: uppercase;
 		}.files button:hover,
@@ -136,11 +137,11 @@ function googleTranslateElementInit() {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 			}.files button {
-			width: 100%;
+			width: 90%;
 			padding: 1em;
 		}.square {
   width: 300px;
-  height: 280px;
+  height: 200px;
   background: #f2f2f2;
 }
         }
@@ -304,4 +305,4 @@ function googleTranslateElementInit() {
 <a href="index.php"><span>Retourner à la page d'accueil</span></a>
  </div>
 </body>
-</html> 
+</html>
