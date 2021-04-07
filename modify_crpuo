@@ -1,5 +1,38 @@
   
 <html>
+<style>
+  *{
+    margin: 0;
+    paading: 0;
+    font-family:Arial, Helvetica, sans-serif;
+  }body{
+    background:#f2f2f2;
+  }h1{
+  text-align: center;
+  }.link{
+  text-align: center;
+  }.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#2d2d2c;
+   color: white;
+   text-align: center;
+ }.square {
+  width: 50px;
+  height: 280px;
+  background: #f2f2f2;
+}
+/* LARGE SCREENS */
+        @media(min-width:900px) {
+  .square {
+  width: 300px;
+  height: 280px;
+  background: #f2f2f2;
+  }              
+}
+</style>
 
 <body>
 <?php
@@ -13,11 +46,11 @@ $sql = "UPDATE crpuo SET $colonne = '$modif' WHERE Nom LIKE '%" .$name. "%'";
 $result = $mysqli->query($sql);
 
 if ($mysqli -> error) {
-  echo "<h1>Il ya eu une erreur<br> Veuillez ressayer</h1> " ;
+  echo "<h1>Il ya eu une erreur<br> Veuillez réessayer</h1> " ;
   
 }
 else{
-	echo "<h1>Operation effectuee</h1>";
+	echo "<h1>Opération effectuée</h1>";
 }
 $mysqli->close();
 
