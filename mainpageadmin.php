@@ -58,14 +58,23 @@ include "db_connect.php";
   <select name="keywords" id="keywords" form="keywordform">
   <option value="Nom">Nom</option>
   <option value="Prenom">Prenom</option>
-  <option value="Faculte">Faculte</option>
-  <option value="Nombre_de_cle">Nombre de cle</option>
-  <option value="Code_de_cle">Code de cle</option>
-  <option value="Nom_piece">Nom de la piece</option>
-  <option value="Batiment">Batiment</option>
+  <option value="Faculte">Faculté</option>
+  <option value="Nombre_de_cle">Nombre de clé</option>
+  <option value="Code_de_cle">Code de clé</option>
+  <option value="Nom_piece">Nom de la pièce</option>
+  <option value="Batiment">Bâtiment</option>
   <option value="Date_de_remise">Date de remise</option>
   <option value="Date_de_fin">Date de fin</option>
-  <option value="Depot">Depot</option>
+  <option value="Depot">Dépôt</option>
+  <option value="Statue">Statue</option>
+  <option value="Numero_etudiant">Numéro d'étudiant/d'employer</option>
+  <option value="Courriel">Courriel</option>
+  <option value="Courriel_uottawa">Courriel uottawa</option>
+  <option value="Contact_urgence">Contact d'urgence</option>
+  <option value="Telephone_contact_urgence">Téléphone du contact d'urgence</option>
+  <option value="Nom_superviseur">Nom du superviseur</option>
+  <option value="Courriel_superviseur"> Courriel du superviseur</option>
+  <option value="Statue_cle">Statue de la clé</option>
 </select>
   <br>
  <form action="keyword.php" id="keywordform">
