@@ -74,6 +74,7 @@ include "db_connect.php";
   <option value="Telephone_contact_urgence">Téléphone du contact d'urgence</option>
   <option value="Nom_superviseur">Nom du superviseur</option>
   <option value="Courriel_superviseur"> Courriel du superviseur</option>
+  <option value="Tele">Téléphone</option>
   <option value="Statue_cle">Statue de la clé</option>
 </select>
   <br>
@@ -115,7 +116,11 @@ include "db_connect.php";
   <br>
   Numéro d'étudiant :<br>
   <input type="text" name="numero_etudiant">
-  <br>		
+  <br>	
+		
+Téléphone :<br>
+  <input type="text" name="tele">
+  <br>
 		  Courriel :<br>
   <input type="text" name="courriel"><br>
 		  Courriel uOttawa :<br>
