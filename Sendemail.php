@@ -66,7 +66,12 @@ include "db_connect.php";
 
 $nom = $_POST["nom"];
 $prenom = $_POST["prenom"];
-//$faculte = $_POST["faculte"];
+$num_etu = $_POST["numero_etudiant"];
+$tele = $_POST["tele"];
+$courriel_uottawa = $_POST["courriel_uottawa"];
+$courriel = $_POST["courriel"];
+$contact_urgence = $_POST["contact_urgence"];
+$tele_urgence = $_POST["tele_contact_urgence"];
 $departement = $_POST["departement"];
 $nombre_de_cle = $_POST["nombredecle"];
 $code_de_cle = $_POST["codedecle"];
@@ -74,16 +79,11 @@ $nom_piece = $_POST["nompiece"];
 $batiment = $_POST["batiment"];
 $date_de_remise = $_POST["datederemise"];
 $date_de_fin = $_POST["datedefin"];
-$supmail = $_POST["supmail"];
+$supmail = $_POST["courriel_sup"];
 $depot = $_POST["depot"];
-$supnom = $_POST["supnom"];
-$etu = $_POST["etu"]; //numéro étudiant ou employer
-$tele = $_POST["tele"]; //Numero telephone ou poste
-$mailuottawa = $_POST["emailottawa"];
-$altmail = $_POST["altmail"];
-$urgence = $_POST["urgence"]; //Contact urgence
-$tele_urgence = $_POST["teleurgence"];
+$supnom = $_POST["nom_sup"];
 $statue = $_POST["statue"];
+$statue_cle = 'courriel_envoyer';
 
 echo "<h2> $nom $prenom vous avez envoyer un courriel a $supnom au $supmail</h2>";
 
@@ -119,12 +119,12 @@ $mail->Subject = 'Demade de cle uottawa';
     } else {
        // $msg .= "Message sent!";
     }
-}
+}  
 //$mail->addAttachment($file_tmp, $file_name);
 $mail->Body = "Bonjour $supnom,<br>Vous avez une demande de $prenom $nom pour y avoir une cle.<br>
-<br> nom: $nom <br> Prenom: $prenom, <br> Numero etudiant/employer : $etu <br> Numero telephone: $tele
-<br> Courriel uOttawa: $mailuottawa <br> Courriel alternatif: $altmail <br> Contact urgence: $urgence <br>
-Telephone du contact d'urgence: $tele_urgence  <br> Faculte: $faculte <br> Departement: $departement <br> Nombre de cle: $nombre_de_cle
+<br> nom: $nom <br> Prenom: $prenom, <br> Numero etudiant/employer : $num_etu <br> Numero telephone: $tele
+<br> Courriel uOttawa: $courriel_uottawa <br> Courriel alternatif: $courriel <br> Contact urgence: $contact_urgence <br>
+Telephone du contact d'urgence: $tele_urgence  <br> Departement: $departement <br> Nombre de cle: $nombre_de_cle
 <br> Code de cle: $code_de_cle <br> Nom de la piece: $nom_piece <br> Batiment: $batiment <br> Date de remise: $date_de_remise <br> Date de fin: $date_de_fin <br>
 Depot: $depot <br> Statue: $statue <br><br>
 SVP envoye l'information et les certificats a l'adjointe de la demande de cle. Si vous acceptez, vous pouvez prendre une capture d'ecran de la demande et l'envoyer a l'adjointe avec les certificats, pour proceder la demande.<br><br>Merci,<br> Systeme de demande de cle uOttawa." ;
@@ -132,11 +132,10 @@ $mail->AddAddress($supmail);
 $mail->Send();
 //$attachment= $pdf->Output('attachment.pdf', 'S');
 
-//$mailer->AddStringAttachment($attachment, 'attachment.pdf');
-//include "pdfdemande.php";
 
 
-$sql = "INSERT INTO general (ID, Nom, Prenom, Departement, Nombre_de_cle, Code_de_cle, Nom_piece, Batiment, Date_de_remise, Date_de_fin, Depot) VALUES (NULL, '$nom', '$prenom', '$departement', '$nombre_de_cle', '$code_de_cle', '$nom_piece', '$batiment', '$date_de_remise', '$date_de_fin', '$depot')";
+
+$sql = "INSERT INTO general (ID, Nom, Prenom, Statue, numero_etudiant, courriel_uottawa, telephone, courriel, contact_urgence, telephone_contact_urgence, nom_superviseur, courriel_superviseur, Departement, Nombre_de_cle, Code_de_cle, Nom_piece, Batiment, Date_de_remise, Date_de_fin, Depot, statue_cle) VALUES (NULL, '$nom', '$prenom', '$statue', '$num_etu', '$courriel_uottawa', '$tele', '$courriel', '$contact_urgence', '$tele_urgence', '$supnom', '$supmail', '$departement', '$nombre_de_cle', '$code_de_cle', '$nom_piece', '$batiment', '$date_de_remise', '$date_de_fin', '$depot', '$statue_cle')";
 $result = $mysqli->query($sql);
 
 
