@@ -66,7 +66,7 @@ $supmail = $_GET["courriel_sup"];
 $depot = $_GET["depot"];
 $supnom = $_GET["nom_sup"];
 $statue = $_GET["statue"];
-$statue_cle = 'courriel_envoyer';
+$statue_cle = $_GET["statue_cle"];
 
 
 echo "<h1>Vous avez ajouté quelqu'un à la base de données!</h1>";
@@ -82,7 +82,7 @@ $result = $mysqli->query($sql);
 <h1>Vous avez ajouté quelqu'un à la base de données!</h1>
 <div class = "square"></div>
 <div class = "link">
-      <a href="mainpagelogin.php"><span>Retourner à la page d'accueil</span></a>
+      <a href="mainpageadmin.php"><span>Retourner à la page d'accueil</span></a>
       </div>
 <div class="footer">
 <p>Développé par Keasy</p>
