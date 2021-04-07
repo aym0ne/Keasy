@@ -304,4 +304,4 @@ function googleTranslateElementInit() {
 <a href="index.php"><span>Retourner à la page d'accueil</span></a>
  </div>
 </body>
-</html>
+</html> 
