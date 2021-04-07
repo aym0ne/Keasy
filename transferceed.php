@@ -47,7 +47,7 @@ function googleTranslateElementInit() {
 include "db_connect.php";
 $name= $_GET["nom"];
 $departement = $_GET["departement"];
-$sql =  "INSERT INTO $departement(Nom,Prenom,Statue,numero_etudiant,courriel_uottawa,telephone,courriel,contact_urgence,telephone_contact_urgence,nom_superviseur,courriel_superviseur,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot,statue_cle) SELECT Nom,Prenom,Statue,numero_etudiant,courriel_uottawa,telephone,courriel,contact_urgence,telephone_contact_urgence,nom_superviseur,courriel_superviseur,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot,statue_cle FROM ceed WHERE  Nom  LIKE'%" .$name. "%'";
+$sql =  "INSERT INTO ceed(Nom,Prenom,Statue,numero_etudiant,courriel_uottawa,telephone,courriel,contact_urgence,telephone_contact_urgence,nom_superviseur,courriel_superviseur,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot,statue_cle) SELECT Nom,Prenom,Statue,numero_etudiant,courriel_uottawa,telephone,courriel,contact_urgence,telephone_contact_urgence,nom_superviseur,courriel_superviseur,Departement,Nombre_de_cle,Code_de_cle,Nom_piece,Batiment,Date_de_remise,Date_de_fin,Depot,statue_cle FROM general WHERE  Nom  LIKE'%" .$name. "%'";
 $result = $mysqli->query($sql);
 ?>
 </html>
