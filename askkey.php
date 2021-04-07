@@ -241,7 +241,7 @@
           </p> 
           <p>
             <label>Courriel du superviseur</label>
-            <input type="text" name="sourriel_sup">
+            <input type="text" name="courriel_sup">
           </p>
   <class="full">
           <h4>Statut</h4>
