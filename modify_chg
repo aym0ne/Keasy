@@ -46,7 +46,7 @@ $sql = "UPDATE chg SET $colonne = '$modif' WHERE Nom LIKE '%" .$name. "%'";
 $result = $mysqli->query($sql);
 
 if ($mysqli -> error) {
-  echo "<h1>Il ya eu une erreur<br> Veuillez réssayer</h1> " ;
+  echo "<h1>Il ya eu une erreur<br> Veuillez réessayer</h1> " ;
   
 }
 else{
