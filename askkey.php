@@ -1,14 +1,20 @@
-  
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <!DOCTYPE html>
 <html lang="fr">
-
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <head>
 	<style>
 		/*FORM STYLES */
 		* {
 			box-sizing: border-box;
 		}
-
 		body {
 			background: #8f001a;
 			color: #2d2d2c;
@@ -45,7 +51,6 @@
 			margin-right: auto;
 			padding: 1em;
 		}
-
         /*FILES STYLES*/
 		.files {
 			background: #f2f2f2;
@@ -94,7 +99,6 @@
   background-color: #fff;
   border-radius: 100%;
 }
-
 /* On mouse-over, add a grey background color */
 .container_radio:hover input ~ .checkmark {
   background-color: #ccc;
@@ -148,14 +152,13 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 	<div class="container">
 		<h1 class="title"><span>Demande de clé</span></h1>
     <div class="wrapper">
       <div class="contact">
         <h3>Répondez aux questions ci-dessus.</h3>
-        <form>
+         <form action="Sendemail.php" role="form" method="post" enctype="multipart/form-data" action="Sendmail.php">
           <p>
             <label>Nom de famille</label>
             <input type="text" name="nom">
@@ -262,7 +265,7 @@
   <span class="checkmark"></span>
 </label>
   
-        </form>       
+       
       </div>
  
       <div class="files">
@@ -275,8 +278,6 @@
 <li>Normes d'accessibilités pour les services à la clientèle</li>
 <li>Travaillons ensemble : Le code des droits de la personne de l’Ontario et la LAPHO</li>
 </ul>
-
-
  <h4>Les formations suivantes sont obligatoires pour tous les superviseurs:</h4>
 <ul class="b">
 <li>Sensibilisation des superviseurs à la santé et à la sécurité</li>
@@ -287,12 +288,15 @@
 <li>Gestion des risques en laboratoire de génie</li>
 </ul>
 <div class="add">
-<input type="file" name="sciencelab" id="sciencelab">
+<input type="hidden" name="MAX_FILE_SIZE" value="100000">
+      <p>  <input name="userfile[]" type="file" multiple="multiple"></p>
 <br><br>
 </div>
           <class="full">
             <div class = "square"></div>
             <button>Envoyez le formulaire</button>
+			  </form>
+
       </div>
     </div>
   </div>
